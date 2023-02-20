@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #000;
+}
+
+.hero {
+  background-image: url('./img/hero-bg.jpg');
+  background-size: cover;
+  height: 550px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 150px;
+  text-shadow: 1px 1px #333;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  text-shadow: 1px 1px #333;
+}
+
+.category-section {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.category-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.category-section p {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.category-section .category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.category-section .category-grid .category-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-section .category-grid .category-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.category-section .category-grid .category-item p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8em;
+  color: #333;
+  margin: 0;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 20%;
+  background-color: #f2f2f2;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.menu h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 1em 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  font-size: 1em;
+  color: #333;
+  margin: 1em 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #000;
+}
+
+.products {
+  width: 80%;
+  padding: 2em 1em;
+  box-sizing: border-box;
+}
+
+.products h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 1em 0;
+  text-align: center;
+}
+
+.product {
+  width: 30%;
+  background-color: #f2f2f2;
+  margin: 1em;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.product:hover {
+  box-shadow: 0 0 10px #999;
+}
+
+.product img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+.product h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 1em 0;
+}
+
+.product p {
+  font-size: 1em;
+  color: #333;
+  margin: 1em 0;
+}
+
+.product button {
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #000;
+}
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <h1>Elegant Wardrobe Home</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Shopping Cart</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<div class="hero">
+  <h2>Find your perfect outfit</h2>
+  <p>Discover the latest fashion and trends in menswear and womenswear</p>
+</div>
+
+<div class="category-section">
+  <h2>Shop by Category</h2>
+  <p>Find the perfect outfit for every occasion</p>
+  <div class="category-grid">
+    <div class="category-item">
+      <h3>Men's Clothing</h3>
+      <p>Find the latest in men's fashion</p>
+    </div>
+    <div class="category-item">
+      <h3>Women's Clothing</h3>
+      <p>Discover the latest in women's fashion</p>
+    </div>
+    <div class="category-item">
+      <h3>Accessories</h3>
+      <p>Shop for the perfect accessory to complete your look</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; ASOS inspired homepage 2020</p>
+</footer>
+<!--<script src="Homepage.JS"></script>-->
+  </body>
+</html>
